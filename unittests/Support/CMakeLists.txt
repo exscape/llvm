@@ -35,7 +35,6 @@ add_llvm_unittest(SupportTests
   NativeFormatTests.cpp
   Path.cpp
   ProcessTest.cpp
-  ProgramTest.cpp
   RegexTest.cpp
   ReplaceFileTest.cpp
   ScaledNumberTest.cpp
