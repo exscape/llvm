@@ -107,6 +107,12 @@ public:
 
   bool isBranchOffsetInRange(unsigned BranchOpc,
                              int64_t BrOffset) const override;
+
+  unsigned insertIndirectBranch(MachineBasicBlock &MBB,
+                                MachineBasicBlock &NewDestBB,
+                                const DebugLoc &DL,
+                                int64_t BrOffset = 0,
+                                RegScavenger *RS = nullptr) const override;
 private:
   const AVRRegisterInfo RI;
 };
